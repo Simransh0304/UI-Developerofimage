@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plan</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <!-- Insert your logo here -->
+                <i class="fa-brands fa-slack"></i>
+                
+            </div>
+            <nav class="nav">
+                <ul>
+                    
+                    <li><a href="#"> <i class="fa-regular fa-user"></i><br>Students</a></li>
+                    
+                    <a href="#"><i class="fa-solid fa-book"></i><br>Lesson Plan</a>
+                   
+                    <li><a href="#"> <i class="fa-solid fa-gear"></i><br>Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <section class="video-upload">
+                
+                <h2><i class="fa-solid fa-play"></i>  Videos</h2>
+                <div class="upload-area">
+                    <input type="text" placeholder="Insert URL here">
+                    <div class="upload-or">
+                        <span>or</span>
+                       
+                    </div>
+                    <div class="upload-button-container">
+                        upload
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    /* width: 20%; */
+    background-color: #f3f5f7;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 40px;
+    /* Add styles for the logo if needed */
+}
+
+.nav ul {
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+}
+
+.nav li {
+    width: 100%;
+}
+
+.nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.nav a:hover, .nav .active a {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+.video-upload {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+   
+    gap: 10px;
+}
+
+.upload-area input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+.upload-or {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.upload-or span {
+    font-size: 16px;
+}
+
+.upload-button-container {
+    padding: 55px 20px;
+    background-color: #f3f5f7;
+    border-radius: 4px;
+    cursor: pointer;
+    border: #333;
+    height: 30%;
+    width: 14%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: auto;
+   
+}
+h2
+    {
+    font-size: small;
+    color: gray;
+}
+
+
+.upload-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    color: #e9ecef;
+}
+
+</style>
